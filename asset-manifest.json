@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/anniversary/static/css/main.14b6479d.chunk.css",
+    "main.js": "/anniversary/static/js/main.7e57c757.chunk.js",
+    "main.js.map": "/anniversary/static/js/main.7e57c757.chunk.js.map",
+    "runtime-main.js": "/anniversary/static/js/runtime-main.2af54d8b.js",
+    "runtime-main.js.map": "/anniversary/static/js/runtime-main.2af54d8b.js.map",
+    "static/js/2.3677dfcf.chunk.js": "/anniversary/static/js/2.3677dfcf.chunk.js",
+    "static/js/2.3677dfcf.chunk.js.map": "/anniversary/static/js/2.3677dfcf.chunk.js.map",
+    "static/js/3.8af37262.chunk.js": "/anniversary/static/js/3.8af37262.chunk.js",
+    "static/js/3.8af37262.chunk.js.map": "/anniversary/static/js/3.8af37262.chunk.js.map",
+    "index.html": "/anniversary/index.html",
+    "static/css/main.14b6479d.chunk.css.map": "/anniversary/static/css/main.14b6479d.chunk.css.map",
+    "static/js/2.3677dfcf.chunk.js.LICENSE.txt": "/anniversary/static/js/2.3677dfcf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2af54d8b.js",
+    "static/js/2.3677dfcf.chunk.js",
+    "static/css/main.14b6479d.chunk.css",
+    "static/js/main.7e57c757.chunk.js"
+  ]
+}
