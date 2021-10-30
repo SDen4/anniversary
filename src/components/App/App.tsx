@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Album from '../Album';
+import Main from '../Main';
 import styles from './App.module.css';
 
-function App() {
-  return (
-    <div className={styles.app}>
-      <header className={styles.appHeader}>
-        С годовщиной свадьбы! Черновик!
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const [isMain, setIsMain] = useState<boolean>(true);
+
+  return <div className={styles.app}>{isMain ? <Main /> : <Album />}</div>;
+};
 
 export default App;

@@ -1,14 +1,18 @@
 .app {
-  text-align: center;
-}
-
-.appHeader {
-  background: linear-gradient(90deg, #ffb6c1, #ff69b4 );
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background: linear-gradient(
+      135deg,
+      rgba(165, 42, 42, 0.9),
+      rgba(128, 0, 0, 0.9)
+    ),
+    no-repeat url('../../photos/IMG20190505093753.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
 }
