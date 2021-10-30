@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .buttonWrapper {
@@ -40,15 +41,65 @@
   display: block;
   position: absolute;
   max-width: 500px;
+  border-radius: 10px;
+  animation: appearing 1s linear;
+}
+
+@keyframes appearing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .photoWrapper img {
   width: 100%;
   height: 100%;
   display: block;
+  border-radius: 10px;
 }
 
 .position1 {
-  top: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.position2 {
+  top: 0;
+  right: 0;
+}
+
+.position3 {
+  top: 0;
+  left: 0;
+}
+
+.position4 {
+  bottom: 0;
+  right: 0;
+}
+
+.position5 {
+  bottom: 0;
+  left: 0;
+}
+
+.position6 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.position7 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.position8 {
+  bottom: 10%;
   left: 10%;
 }

@@ -1,4 +1,11 @@
-import React from 'react';
+import React, {
+  memo,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import clsx from 'clsx';
 
 import { AlbumPageType } from './types';
@@ -35,12 +42,73 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
   const onButtonClick = () => {
     clickOnAlbumPage();
   };
+
+  const photosArr = [
+    photo4,
+    photo3,
+    photo1,
+    photo5,
+    photo6,
+    photo8,
+    photo9,
+    photo10,
+    photo11,
+    photo12,
+    photo13,
+    photo14,
+    photo15,
+    photo16,
+    photo17,
+    photo18,
+    photo19,
+    photo20,
+    photo21,
+    photo22,
+    photo23,
+    photo24,
+    photo2,
+    photo25,
+    photo7,
+  ];
+
+  const [count, setCount] = useState<number>(0);
+  const [newPhotoArr, setNewPhotoArr] = useState<any>(photosArr[0]);
+
+  useEffect(() => {
+    if (count < 25) {
+      let timeout = setTimeout(() => {
+        setCount(count + 1);
+        setNewPhotoArr([...newPhotoArr, photosArr[count + 1]]);
+      }, 1000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [count, newPhotoArr, photosArr]);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentWrapper}>
-        <div className={clsx(styles.photoWrapper, styles.position1)}>
-          <img src={photo25} alt="the_1st_photo" />
-        </div>
+        {photosArr.slice(0, count).map((el: any, i) => {
+          console.log(i);
+          return (
+            <div
+              className={clsx(
+                styles.photoWrapper,
+                i % 8 === 0 && styles.position1,
+                i % 8 === 1 && styles.position2,
+                i % 8 === 2 && styles.position3,
+                i % 8 === 3 && styles.position4,
+                i % 8 === 4 && styles.position5,
+                i % 8 === 5 && styles.position6,
+                i % 8 === 6 && styles.position7,
+                i % 8 === 7 && styles.position8,
+              )}
+              key={el}
+            >
+              <img src={el} alt="the_new_photo" />
+            </div>
+          );
+        })}
       </div>
       <div className={styles.buttonWrapper}>
         <button onClick={onButtonClick} type="button" className={styles.button}>
