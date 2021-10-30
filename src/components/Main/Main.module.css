@@ -49,8 +49,8 @@
   color: red;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 240, 0.7),
-    rgba(250, 235, 215, 0.7)
+    rgba(255, 255, 240, 0.2),
+    rgba(250, 235, 215, 0.4)
   );
   transition: 0.4s;
   opacity: 0;

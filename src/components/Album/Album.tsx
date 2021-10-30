@@ -1,11 +1,4 @@
-import React, {
-  memo,
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 
 import { AlbumPageType } from './types';
@@ -48,6 +41,7 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
     photo3,
     photo1,
     photo5,
+    photo25,
     photo6,
     photo8,
     photo9,
@@ -63,11 +57,10 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
     photo19,
     photo20,
     photo21,
-    photo22,
     photo23,
-    photo24,
+    photo22,
     photo2,
-    photo25,
+    photo24,
     photo7,
   ];
 
@@ -79,7 +72,7 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
       let timeout = setTimeout(() => {
         setCount(count + 1);
         setNewPhotoArr([...newPhotoArr, photosArr[count + 1]]);
-      }, 1000);
+      }, 3000);
 
       return () => clearTimeout(timeout);
     }
