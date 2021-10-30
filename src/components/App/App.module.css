@@ -8,13 +8,25 @@
   height: 100vh;
   background: linear-gradient(
       135deg,
-      rgba(165, 42, 42, 0.9),
-      rgba(128, 0, 0, 0.9)
+      rgba(165, 42, 42, 0.8),
+      rgba(128, 0, 0, 0.8)
     ),
     no-repeat url('../../photos/IMG20190505093753.jpg');
   background-position: center;
   background-size: cover;
   padding: 50px;
+}
+
+.backOfAlbum {
+  background: linear-gradient(
+      135deg,
+      rgba(165, 42, 42, 0.5),
+      rgba(128, 0, 0, 0.5)
+    ),
+    no-repeat url('../../photos/IMG0416.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
 }
 
 @media (max-width: 830px) {

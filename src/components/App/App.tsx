@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import clsx from 'clsx';
+
 import Album from '../Album';
 import Main from '../Main';
 import styles from './App.module.css';
@@ -15,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div className={styles.app}>
+    <div className={clsx(styles.app, !isMain && styles.backOfAlbum)}>
       {isMain ? (
         <Main clickOnMainPage={clickOnMainPage} />
       ) : (
