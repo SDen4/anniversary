@@ -16,3 +16,9 @@
   background-size: cover;
   padding: 50px;
 }
+
+@media (max-width: 830px) {
+  .app {
+    padding: 20px 10px;
+  }
+}

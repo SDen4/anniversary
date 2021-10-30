@@ -6,7 +6,23 @@ import styles from './App.module.css';
 const App = () => {
   const [isMain, setIsMain] = useState<boolean>(true);
 
-  return <div className={styles.app}>{isMain ? <Main /> : <Album />}</div>;
+  const clickOnMainPage = () => {
+    setIsMain(false);
+  };
+
+  const clickOnAlbumPage = () => {
+    setIsMain(true);
+  };
+
+  return (
+    <div className={styles.app}>
+      {isMain ? (
+        <Main clickOnMainPage={clickOnMainPage} />
+      ) : (
+        <Album clickOnAlbumPage={clickOnAlbumPage} />
+      )}
+    </div>
+  );
 };
 
 export default App;
