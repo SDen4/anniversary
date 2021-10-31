@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './Main.module.css';
 
-import photo from '../../photos/dsakfljsdf.jpg';
+import photo from '../../photos/4.jpg';
 
 import { MainPageType } from './types';
 

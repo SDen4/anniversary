@@ -39,10 +39,6 @@
   z-index: 10;
 }
 
-.player {
-  background: transparent !important;
-}
-
 @media (max-width: 830px) {
   .app {
     padding: 20px 10px;

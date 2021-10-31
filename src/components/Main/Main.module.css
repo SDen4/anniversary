@@ -1,8 +1,5 @@
 .appHeader {
   font-size: calc(10px + 5vmin);
-  font-style: italic;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
 
@@ -45,7 +42,6 @@
   justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  font-style: italic;
   color: rgb(244, 164, 96);
   background: linear-gradient(
     135deg,

@@ -8,11 +8,11 @@ import photo2 from '../../photos/28fe434ff72d44409b55d260ac456620.jpeg';
 import photo3 from '../../photos/779c0c546ef94e5c98d44633ea435390.jpeg';
 import photo4 from '../../photos/9538cdaf2e814bb7ab3e2f88712ff1bb.jpeg';
 import photo5 from '../../photos/5316876ec66548a0aa2d7d42f258b392.jpeg';
-import photo6 from '../../photos/alkdjshf.jpg';
-import photo7 from '../../photos/askjdhfg.jpg';
+import photo6 from '../../photos/askjdhfg.jpg';
+import photo7 from '../../photos/askjdhfg2.jpg';
 import photo8 from '../../photos/cd1767d4868b454894051910cfdc19ee.jpeg';
 import photo9 from '../../photos/djskfhjsdh.jpg';
-import photo10 from '../../photos/dsakfljsdf.jpg';
+import photo10 from '../../photos/4.jpg';
 import photo11 from '../../photos/IMG6680.jpg';
 import photo12 from '../../photos/IMG6719.jpg';
 import photo13 from '../../photos/IMG6720.jpg';
@@ -68,11 +68,20 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
   const [newPhotoArr, setNewPhotoArr] = useState<any>(photosArr[0]);
 
   useEffect(() => {
+    if (count === 0) {
+      let timeout = setTimeout(() => {
+        setCount(count + 1);
+        setNewPhotoArr([...newPhotoArr, photosArr[count + 1]]);
+      }, 200);
+
+      return () => clearTimeout(timeout);
+    }
+
     if (count < 25) {
       let timeout = setTimeout(() => {
         setCount(count + 1);
         setNewPhotoArr([...newPhotoArr, photosArr[count + 1]]);
-      }, 5000);
+      }, 7000);
 
       return () => clearTimeout(timeout);
     }

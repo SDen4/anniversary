@@ -33,14 +33,7 @@ const App = () => {
   return (
     <div className={clsx(styles.app, !isMain && styles.backOfAlbum)}>
       <div className={styles.playerWrapper}>
-        <ReactAudioPlayer
-          src={track}
-          controls
-          autoPlay
-          loop
-          className={styles.player}
-          ref={player}
-        />
+        <ReactAudioPlayer src={track} controls autoPlay loop ref={player} />
       </div>
 
       {isMain ? (

@@ -25,8 +25,8 @@
   background: #fff;
   padding: 5px 10px;
   outline: none;
+  font-family: 'Caveat', sans-serif;
   font-size: calc(10px + 2vmin);
-  font-style: italic;
   color: rgb(244, 164, 96);
   border: 2px solid transparent;
   border-radius: 5px;
