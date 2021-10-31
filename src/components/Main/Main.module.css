@@ -1,5 +1,5 @@
 .appHeader {
-  font-size: calc(10px + 5vmin);
+  font-size: calc(10px + 7vmin);
   color: white;
 }
 
@@ -58,9 +58,9 @@
 
 @media (max-width: 830px) {
   .appHeader {
-    font-size: calc(10px + 3vmin);
+    font-size: calc(10px + 5vmin);
   }
   .wrapper {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
