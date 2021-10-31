@@ -27,7 +27,7 @@
   outline: none;
   font-size: calc(10px + 2vmin);
   font-style: italic;
-  color: red;
+  color: rgb(244, 164, 96);
   border: 2px solid transparent;
   border-radius: 5px;
   transition: 0.4s;
@@ -35,7 +35,7 @@
 }
 
 .button:hover {
-  border: 2px solid red;
+  border: 2px solid rgb(244, 164, 96);
 }
 
 .photoWrapper {
@@ -104,4 +104,15 @@
 .position8 {
   bottom: 10%;
   left: 10%;
+}
+
+.positonLast {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: unset;
+}
+
+.positonLast img {
+  min-width: 75vw;
 }

@@ -26,7 +26,7 @@
 }
 
 .imgWrapper:hover {
-  border: 5px solid red;
+  border: 5px solid rgb(244, 164, 96);
   cursor: pointer;
 }
 
@@ -46,7 +46,7 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   font-style: italic;
-  color: red;
+  color: rgb(244, 164, 96);
   background: linear-gradient(
     135deg,
     rgba(255, 255, 240, 0.2),

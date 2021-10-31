@@ -81,8 +81,7 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentWrapper}>
-        {photosArr.slice(0, count).map((el: any, i) => {
-          console.log(i);
+        {photosArr.slice(0, count).map((el: any, i: number) => {
           return (
             <div
               className={clsx(
@@ -95,6 +94,7 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
                 i % 8 === 5 && styles.position6,
                 i % 8 === 6 && styles.position7,
                 i % 8 === 7 && styles.position8,
+                i === photosArr.length - 1 && styles.positonLast,
               )}
               key={el}
             >
