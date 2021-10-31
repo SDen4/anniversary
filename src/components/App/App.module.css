@@ -5,6 +5,7 @@
   justify-content: flex-start;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
   height: 100vh;
   background: linear-gradient(
       180deg,
@@ -29,6 +30,17 @@
   background-position: center;
   background-size: cover;
   padding: 20px;
+}
+
+.playerWrapper {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 10;
+}
+
+.player {
+  background: transparent !important;
 }
 
 @media (max-width: 830px) {

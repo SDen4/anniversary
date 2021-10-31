@@ -72,7 +72,7 @@ const Album: React.FC<AlbumPageType> = ({ clickOnAlbumPage }) => {
       let timeout = setTimeout(() => {
         setCount(count + 1);
         setNewPhotoArr([...newPhotoArr, photosArr[count + 1]]);
-      }, 3000);
+      }, 5000);
 
       return () => clearTimeout(timeout);
     }
